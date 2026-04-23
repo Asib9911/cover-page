@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NSTU Cover Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <img src="logo.png" class="logo">
+
+    <h2>NSTU Cover Page Generator</h2>
+
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <input type="text" id="id" placeholder="Enter Your ID">
+    <input type="text" id="dept" placeholder="Department">
+    <input type="text" id="course" placeholder="Course Name">
+    <input type="text" id="teacher" placeholder="Teacher Name">
+
+    <button onclick="generate()">Generate PDF</button>
+
+</div>
+
+<!-- Hidden printable cover page -->
+<div id="cover" class="cover">
+
+    <img src="logo.png" class="logo">
+
+    <h1>Noakhali Science and Technology University</h1>
+    <h2>Assignment Cover Page</h2>
+
+    <p><b>Name:</b> <span id="out-name"></span></p>
+    <p><b>ID:</b> <span id="out-id"></span></p>
+    <p><b>Department:</b> <span id="out-dept"></span></p>
+    <p><b>Course:</b> <span id="out-course"></span></p>
+    <p><b>Teacher:</b> <span id="out-teacher"></span></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
